@@ -73,6 +73,7 @@ def calc_cdf(array,var,bandwidth=None):
     kde=stats.gaussian_kde(dataset=array,bw_method=bw)
     return kde.integrate_box_1d(low=0,high=var)
 
+#%% 
 
 """ weibull fits: """
 
